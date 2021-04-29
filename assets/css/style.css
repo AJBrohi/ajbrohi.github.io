@@ -144,7 +144,7 @@ body.scale-cv {
 .scale-cv .education__container,
 .scale-cv .experience__container,
 .scale-cv .certificate__container,
-.scale-cv .project__container{
+.scale-cv .project__container {
     gap: 0.3rem;
 }
 
@@ -232,7 +232,7 @@ img {
 }
 
 .section {
-    padding: 0.7rem 0;
+    padding: 1.5rem 0;
 }
 
 .section-title {
@@ -242,7 +242,7 @@ img {
     text-transform: uppercase;
     letter-spacing: .35rem;
     text-align: center;
-    margin-bottom: var(--mb-1);
+    margin-bottom: var(--mb-3);
 }
 
 .bd-container {
@@ -254,7 +254,7 @@ img {
 
 .bd-grid {
     display: grid;
-    gap: 0.8rem;
+    gap: 1.5rem;
 }
 
 .l-header {
@@ -492,11 +492,11 @@ img {
 }
 
 .experience__description,
-.project__description{
+.project__description {
     text-align: justify;
 }
 
-.project__description p{
+.project__description p {
     margin-bottom: var(--mb-1);
 }
 

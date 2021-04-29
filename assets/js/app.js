@@ -89,7 +89,7 @@ function scaleCv() {
 }
 
 // REMOVE SIZE
-function removeScale(){
+function removeScale() {
     document.body.classList.remove('scale-cv')
 }
 
@@ -99,19 +99,19 @@ let resumeButton = document.getElementById('resume-button');
 let areaCv = document.getElementById('area-cv');
 
 let opt = {
-    margin:       0,
-    filename:     "Md. Al-Junaed Islam's Resume.pdf",
-    image:        { type: 'jpeg', quality: 0.98 },
-    html2canvas:  { scale: 4 },
-    jsPDF:        { format: 'a4', orientation: 'portrait' }
-  };
+    margin: 0,
+    filename: "Md. Al-Junaed Islam's Resume.pdf",
+    image: { type: 'jpeg', quality: 0.98 },
+    html2canvas: { scale: 4 },
+    jsPDF: { format: 'a4', orientation: 'portrait' }
+};
 
-function generateResume(){
+function generateResume() {
     html2pdf(areaCv, opt);
 }
 
 
-resumeButton.addEventListener('click', ()=>{
+resumeButton.addEventListener('click', () => {
     scaleCv();
     generateResume();
     setTimeout(removeScale, 5000);
