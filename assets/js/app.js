@@ -108,6 +108,9 @@ let opt = {
 
 function generateResume() {
     html2pdf(areaCv, opt);
+    // .set({
+    //     pagebreak: { mode: 'avoid-all', after: ['#profile'], avoid: 'img' }
+    //   })
 }
 
 
