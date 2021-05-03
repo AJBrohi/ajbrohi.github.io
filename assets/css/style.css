@@ -81,7 +81,7 @@ body.scale-cv {
 
 
 .generate-pdf {
-    /* display: none; */
+    display: none;
     position: absolute;
     top: 2.2rem;
     left: 0;
@@ -647,11 +647,20 @@ img {
 
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 768px) {
     .nav__list {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem .5rem;
     }
+
+    .generate-pdf{
+        display: none !important;
+    }
+
+    .languages__name{
+        justify-content: center;
+    }
+    
 }
 
 @media screen and (min-width: 968px) {
